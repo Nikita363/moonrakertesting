@@ -1,0 +1,14 @@
+{
+  "name": "moonrakersample",
+  "version": "1.0.0",
+  "description": "A sample of an application that uses the moonraker framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/moonraker/bin/moonraker.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "moonraker": "^0.3.5"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "baseUrl": "http://www.qantas.com.au",
+  "featuresDir": "browsertests/features",
+  "stepsDir": "browsertests/steps",
+  "resultsDir": "results",
+  "reporter": "moonraker",
+  "threads": 2,
+
+  "testTimeout": 60000,
+  "elementTimeout": 20000,
+
+  "tags": "!@wip,!@custcollect,!@flight_search_new,!@flight_search_old,@hotels",
+
+  "browser": {
+    "browserName": "chrome",
+    "chromeOptions": {
+      "args": ["--no-sandbox"]
+    }
+  }
+}
