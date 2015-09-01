@@ -1,5 +1,8 @@
 var homePage = require('../pages/hotels_home');
 var searchResults = require('../pages/hotels_searchresults');
+var expect = require('chai').expect;
+var assert = require('chai').assert;
+
 
 exports.define = function (steps) {
 
@@ -19,10 +22,10 @@ exports.define = function (steps) {
         })
     });
 
-    steps.given("I have entered hotel search criteria", function () {
+    steps.given("I have entered hotel search criteria for '$query'", function (query) {
         homePage.visit();
         homePage.location.click();
-        homePage.location.sendKeys('Sydney' + '\n');
+        homePage.location.sendKeys(query + '\n');
     });
 
     steps.when("I search for hotels", function () {
@@ -48,14 +51,10 @@ exports.define = function (steps) {
         homePage.checkIn.click();
     });
 
-    steps.then("the date picker opens", function (checkInField) {
-        homePage.checkInField.getElementsByClassName('pika-single').then(function (className) {
-            className.should.include('pika-single');
+    steps.then("the date picker opens", function (calendarDays) {
+        homePage.calendarDays.getText().then(function (text) {
+            text.should.equal('Sun');
         });
-        //homePage.checkInField.click();
-        //homePage.checkInCalendarDate.getText().then(function (text) {
-        //    text.should.equal('12');
-        //})
     });
 
 };

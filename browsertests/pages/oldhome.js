@@ -2,7 +2,7 @@ var Page = require('moonraker').Page;
 
 module.exports = new Page({
 
-  url: { value: '/' },
+  url: { value: 'http://www.qantas.com.au/' },
 
   departureAirport: { get: function () {
     return this.element("input[name='intFrom']");

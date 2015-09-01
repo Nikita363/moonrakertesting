@@ -9,7 +9,7 @@
   "testTimeout": 60000,
   "elementTimeout": 20000,
 
-  "tags": "!@wip,!@custcollect,!@flight_search_new,!@flight_search_old,@hotels",
+  "tags": "!@wip,!@custcollect,!@flight_search_new,!@flight_search_old,@hotels,!@flight_search_mobile",
 
   "browser": {
     "browserName": "chrome",

@@ -1,4 +1,4 @@
-@flight_search_new
+@flight_search_mobile
 Feature: Searching from the NEW homepage
 
   Scenario: Flight search

@@ -24,10 +24,10 @@
                 <img src="assets/images/logo.png" width="200" height="35" alt="Moonraker logo">
             </a>
             <ul class="stats">
-                <li><span>Passed:</span> <strong>2</strong></li>
-                <li><span>Failed:</span> <strong>1</strong></li>
+                <li><span>Passed:</span> <strong>9</strong></li>
+                <li><span>Failed:</span> <strong>0</strong></li>
                 <li><span>Skipped:</span> <strong>0</strong></li>
-                <li>Duration: <strong>6.336s</strong></li>
+                <li>Duration: <strong>12.137s</strong></li>
                 <li>Threads: <strong>2</strong></li>
             </ul>
         </div>
@@ -46,8 +46,72 @@
                     <thead class="scenario-header dd">
                         <tr>
                             <th>
+                                <div class="scenario-text">Scenario: Hotels page loads successfully</div>
+                                <span class="label label-success">Success</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="scenario-content dd-content">
+                        <tr>
+                            <td>
+                                <div class="scenario-text">Given I have navigated to the hotels page</div>
+                                <span class="label label-success">Success</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="scenario-text">When the page loads</div>
+                                <span class="label label-success">Success</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="scenario-text">Then I can see the accommodation options</div>
+                                <span class="label label-success">Success</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="scenario">
+                <table class="table table-bordered">
+                    <thead class="scenario-header dd">
+                        <tr>
+                            <th>
+                                <div class="scenario-text">Scenario: Hotels search</div>
+                                <span class="label label-success">Success</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="scenario-content dd-content">
+                        <tr>
+                            <td>
+                                <div class="scenario-text">Given I have entered hotel search criteria for &#x27;Sydney&#x27;</div>
+                                <span class="label label-success">Success</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="scenario-text">When I search for hotels</div>
+                                <span class="label label-success">Success</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="scenario-text">Then the search results match my search criteria</div>
+                                <span class="label label-success">Success</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="scenario">
+                <table class="table table-bordered">
+                    <thead class="scenario-header dd">
+                        <tr>
+                            <th>
                                 <div class="scenario-text">Scenario: Calendar selection</div>
-                                <span class="label label-danger">Failed</span>
+                                <span class="label label-success">Success</span>
                             </th>
                         </tr>
                     </thead>
@@ -67,42 +131,7 @@
                         <tr>
                             <td>
                                 <div class="scenario-text">Then the date picker opens</div>
-                                <span class="label label-danger">Failed</span>
-                                <div class="error-info">
-                                    <h3>Error:</h3>
-                                    <code class="error">TypeError: undefined is not a function
-    at Object.&lt;anonymous&gt; (/Users/Nikita/unomee/qantas/moonrakersample/browsertests/steps/hotel-steps.js:52:18)
-    at Object.invoke (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/fn.js:32:19)
-    at [object Object].interpret (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/Macro.js:50:12)
-    at [object Object].interpret_step (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/Interpreter.js:71:47)
-    at iterator (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/Interpreter.js:63:19)
-    at /Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/fn.js:46:16
-    at iterate (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/Array.js:72:13)
-    at Array.each_async (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/Array.js:78:9)
-    at Array.each_async (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/fn.js:27:23)
-    at [object Object].interpret (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/Interpreter.js:58:21)
-    at [object Object].yadda (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/Yadda.js:41:26)
-    at /Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/lib/env/yadda.js:23:49
-    at [object Object].webdriver.promise.ControlFlow.runInNewFrame_ (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/selenium-webdriver/lib/webdriver/promise.js:1654:20)
-    at [object Object].webdriver.promise.ControlFlow.runEventLoop_ (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/selenium-webdriver/lib/webdriver/promise.js:1518:8)
-    at [object Object].wrapper [as _onTimeout] (timers.js:265:14)
-    at Timer.listOnTimeout (timers.js:110:15)
-==== async task ====
-    at Object.module.exports.execute (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/lib/env/session.js:22:44)
-    at /Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/lib/env/yadda.js:22:15
-    at /Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/plugins/mocha/StepLevelPlugin.js:52:17
-    at Context.&lt;anonymous&gt; (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/yadda/lib/plugins/mocha/BasePlugin.js:55:13)
-    at Test.Runnable.run (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/mocha/lib/runnable.js:218:15)
-    at Runner.runTest (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/mocha/lib/runner.js:374:10)
-    at /Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/mocha/lib/runner.js:452:12
-    at next (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/mocha/lib/runner.js:299:14)
-    at /Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/mocha/lib/runner.js:309:7
-    at next (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/mocha/lib/runner.js:248:23)
-    at Immediate._onImmediate (/Users/Nikita/unomee/qantas/moonrakersample/node_modules/moonraker/node_modules/mocha/lib/runner.js:276:5)
-    at processImmediate [as _immediateCallback] (timers.js:358:17)</code>
-                                    <h3>Screenshot:</h3>
-                                    <img src="screenshots/then-the-date-picker-opens.png">
-                                </div>
+                                <span class="label label-success">Success</span>
                             </td>
                         </tr>
                     </tbody>

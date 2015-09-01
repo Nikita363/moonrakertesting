@@ -31,9 +31,9 @@ exports.define = function (steps) {
     });
 
     steps.then("the competition is added to the list of competitions", function () {
-        //homePage.custCollectTable.getText().then(function (text) {
-        //    text.should.equal('Moonraker')
-        //})
+        createComp.compTitle.getText().then(function (text) {
+            text.should.equal('Edit Moonraker')
+        })
     });
 };
 
